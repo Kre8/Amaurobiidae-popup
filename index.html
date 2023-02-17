@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>menu-am</title>
+  <link rel="stylesheet" href="/menu.css">
+
+
+</head>
+<body style="background-image: url(grey-paper3.jpg); background-size: 100vw 100vh;background-repeat: no-repeat;">
+
+  <iframe scrolling="no" id="myframe" src="am/amnew.html"style=" border:none;width:102vw; height:100vh;position:absolute; z-index:19;background-color: transparent;margin-left:-1.5vw;margin-top:-2vh"></iframe>
+<body>
+<button class="hamburger hamburger--collapse toggle-menu menu-right" type="button" aria-label="Menu" aria-controls="navigation">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+
+  <a href="#"  onclick="myFunction2()">Morphology</a>
+	<a href="#" onclick="myFunction()">Taxonomy<br>& Genera</a>
+	<a href="#" onclick="myFunction3()">Etymology</a>
+	<a href="#"><p style="font-size:0.5em; white-space:nowrap;">Let's go to the</p>Pictures</a>
+	<a href="#"></a>
+</nav>
+  
+
+</body>
+<script>
+  function myFunction() {
+    document.getElementById("myframe").src = "genera.html";
+    
+  }
+  function myFunction2() {
+    document.getElementById("myframe").src = "am/amnew.html";
+  }
+  function myFunction3() {
+    document.getElementById("myframe").src = "Ety-am/teeatta2.html";
+  }
+  </script>
+  </script>
+  <script src='js/ajax 2.2.2.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js'></script>
+<script src='https://www.stampede-design.com/demo/bootstrap-pushnav/js/jPushMenu.js'></script><script  src="js/menu.js"></script>
+
+</body>
+</html>
