@@ -685,7 +685,7 @@ transition: opacity 0.1  1.5s ease;
 	position: relative;
 	transition: opacity 0.3s;
 	width: 350px;
-	background-image: url(images/am-palp.svg);
+	background-image: url(images/am-palp2.svg);
 	background-size:100% 100% !important;
 
 	background-repeat: no-repeat;
@@ -697,7 +697,7 @@ transition: opacity 0.1  1.5s ease;
 	box-shadow: -3px 2px 4px 3px rgba(0, 0, 0, 0.579);
 	height:calc(10vw - 4%);
 	width:10vw;
-	background-image: url(images/am-palp.svg);
+	background-image: url(images/am-palp2.svg);
 	background-size:110% 110% !important;
 	background-position-x:-0.6vw ;
 	background-position-y:-0.5vh ;
