@@ -2309,12 +2309,13 @@ margin-left:20vw !important;
 	display: block;
 	position: absolute;
 	top: 80vh;
-	right: 25px;
+	right: 35px;
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
 	text-align: center;
 	text-decoration: none;
+	z-index:200;
 	-webkit-transition: all 0.1s ease-in-out;
 			transition: all 0.1s ease-in-out;
   }
