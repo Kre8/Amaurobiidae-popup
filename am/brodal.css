@@ -96,8 +96,7 @@ transform: translateX(-10%) translateY(-50%);
   width:10%;
   height:10%;
 
-  background-color: rgb(240, 238, 209);
-  filter:drop-shadow(-2px 2px 2px) grey;
+
   animation: animateheader 1s ease;
 }
 .brodal .brodal-header {
@@ -110,8 +109,8 @@ transform: translateX(-10%) translateY(-50%);
   height:15%;
 
   margin-top:-2%;
-  background-color: rgb(240, 238, 209);
-  filter:drop-shadow(-2px 2px 2px) grey;
+
+
   text-align: center;
 }
 

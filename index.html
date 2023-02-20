@@ -1,3 +1,5 @@
+
+<?php if (substr_count($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip')) ob_start("ob_gzhandler"); else ob_start(); ?>
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -7,7 +9,7 @@
 
 
 </head>
-<body style="background-image: url(grey-paper3.jpg); background-size: 100vw 100vh;background-repeat: no-repeat;">
+<body style="background-image: url(grey.jpg); background-size: 100vw 100vh;background-repeat: no-repeat;">
 
   <iframe scrolling="no" id="myframe" src="am/amnew.html"style=" border:none;width:102vw; height:100vh;position:absolute; z-index:19;background-color: transparent;margin-left:-1.5vw;margin-top:-2vh"></iframe>
 <body>
@@ -36,14 +38,14 @@
     document.getElementById("myframe").src = "am/amnew.html";
   }
   function myFunction3() {
-    document.getElementById("myframe").src = "etyam/teeatta2.html";
+    document.getElementById("myframe").src = "Ety-am/teeatta2.html";
   }
   </script>
   </script>
-  <script src='js/ajax 2.2.2.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js'></script>
-<script src='https://www.stampede-design.com/demo/bootstrap-pushnav/js/jPushMenu.js'></script><script  src="js/menu.js"></script>
+  <script src='ajax 2.2.2.js' defer></script>
+  <script src='cloud.js' defer></script>
+<script src='ajax-min.js' defer></script>
+<script src='stampede.js' defer></script><script  src="menu.js" defer></script>
 
 </body>
 </html>
