@@ -119,21 +119,17 @@ transition: opacity 0.1  1.5s ease;
 	overflow: visible;
   }
   .Hotspot {
-	background: rgba(255, 255, 255, 0);
-	border-radius: 32px;
+	background: rgba(239, 187, 187, 0.5);
+
 	box-sizing: border-box;
 	cursor: pointer;
-	height: 100px;
-	padding: 2px;
+	height: 5vh;
 	position: absolute;
 	transition: opacity 0.3s;
-	width: 150px;
+	width: 10vw;
+	margin-left:5vw !important;
   }
-  .view-button{
-	background-color: transparent;
-	width: 250px;
-	height:200px;
-  }
+
   .HotspotAnnotation{
 	transition: all 1s ease;
 	background: rgba(255, 255, 255, 0.809);
@@ -142,7 +138,7 @@ transition: opacity 0.1  1.5s ease;
 	color: rgba(0, 0, 0, 0.8);
 	display: block;
 	font-family:'XTypewriter';
-	font-size: 1.7vw;
+	font-size: 1em;
 	font-weight: 700;
 	left: calc(100% + 1em);
 	overflow-wrap:normal;
@@ -325,7 +321,7 @@ transition: opacity 0.1  1.5s ease;
 	box-shadow: -3px 2px 4px 3px rgba(0, 0, 0, 0.579);
 	height:calc(10vw - 1%);
 	width:10vw;
-	background-image: url(images/head.webp);
+	background-image: url(images/eyes.jpg);
 	transform: scale(1.7) translateY(-4vh) translateX(3vw);
 	border-radius: 50%;
 	position:absolute;
@@ -415,7 +411,7 @@ transition: opacity 0.1  1.5s ease;
 	box-shadow: -3px 2px 4px 3px rgba(0, 0, 0, 0.579);
 	height:calc(10vw - 1%);
 	width:10vw;
-	background-image: url(images/head.webp);
+	background-image: url(images/eyes.jpg);
 	transform: scale(1.7) translateY(-4vh) translateX(3vw);
 	border-radius: 50%;
 	position:absolute;
@@ -490,7 +486,7 @@ transition: opacity 0.1  1.5s ease;
 	border-radius: 32px;
 	box-sizing: border-box;
 	cursor: pointer;
-	height: 100px;
+	height: 200px;
 	padding: 2px;
 	position: relative;
 	transition: opacity 0.3s;
@@ -503,17 +499,21 @@ transition: opacity 0.1  1.5s ease;
 	transition: all 1s ease;
 	filter:drop-shadow(-4px 4px 2px 15px rgba(0, 0, 0, 0.996));
 	box-shadow: -3px 2px 4px 3px rgba(0, 0, 0, 0.579);
-	height:calc(10vw - 1%);
-	width:10vw;
-	background-image: url(images/head.webp);
-	transform: scale(1.7) translateY(-4vh) translateX(3vw);
+aspect-ratio: 1 / 3;
+	transform:  scaleX(1.2) scaleY(1.8) translateY(-4vh) translateX(3vw);
 	border-radius: 50%;
 	position:absolute;
-	background-size: cover;
+
 	border-top: 0.01vw solid white;
 	border-bottom: black;
 	border-left: rgb(129, 101, 25);
 	border-right: rgba(132, 119, 83, 0.759);
+	margin-left:4vw !important;
+
+	width:25vw !important;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Ty_SCYj2ZikyxssPmMmnEULjV5PXdEWTcEUyOcxlRszBUFY_yeg13CY8-b5hGp3a1LA&usqp=CAU);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
   }
   .Hotspot-epi:focus .HotspotAnnotation{
 	transition: all 0.2s ease;
@@ -575,45 +575,6 @@ transition: opacity 0.1  1.5s ease;
 	filter:drop-shadow(-4px 4px 2px 15px rgba(0, 0, 0, 0.996));
   }
 
-  /*===========     JAWS ========================*/
-  .Hotspot-jaw {
-	background: transparent;
-	border-radius: 32px;
-	box-sizing: border-box;
-	cursor: pointer;
-	height: 200px;
-	padding: 2px;
-	position: relative;
-
-	width: 250px;
-	
-	background-size:100% 100% !important;
-
-	background-repeat: no-repeat;
-  
-  }
-  .Hotspot-jaw:focus {
-	transition: all 0.5s ease;
-	height:0vw;
-	width:0vw;
-	opacity:0;
-	position:absolute;
-
-
-  }
-  .Hotspot-jaw:focus .HotspotAnnotation{
-	transition: all 0.1s ease;
-  background-color: transparent;
-	font-size: 0vw;
-	opacity:0;
-	max-width: 0%;
-	display: inline-flex;
-
-
-	  position:absolute;
-	  z-index: 1;
-
-  }
   /*EPIGYNE*/
   .hide{
 	display:none;
@@ -634,14 +595,7 @@ transition: opacity 0.1  1.5s ease;
   .Hotspot-epi:focus t{
 	color:transparent;
   }
-  .Hotspot-epi:focus{
-	margin-left:4vw !important;
-	height:calc(14vw - 1%)!important;
-	width:14vw!important;
-	background-image: url(images/am-epi.webp);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-  }
+
   .Hotspot-epi:focus g{
 	width:100px;
 	position:absolute;
@@ -659,19 +613,7 @@ transition: opacity 0.1  1.5s ease;
 
   .Hotspot:focus{
 	transition: all 1s ease;
-	filter:drop-shadow(-4px 4px 2px 15px rgba(0, 0, 0, 0.996));
-	box-shadow: -3px 2px 4px 3px rgba(0, 0, 0, 0.579);
-	height:calc(14vw - 1%);
-	width:14vw;
-	background-image: url(images/am-crib.webp);
-	transform: scale(4) translateY(6vh) translateX(3vw);
-	border-radius: 50%;
-	position:absolute;
-	background-size: cover;
-	border-top: 0.01vw solid white;
-	border-bottom: black;
-	border-left: rgb(129, 101, 25);
-	border-right: rgba(132, 119, 83, 0.759);
+
   }
 
   /*===========     PALPS ========================*/
@@ -745,11 +687,11 @@ transition: opacity 0.1  1.5s ease;
 	border-radius: 32px;
 	box-sizing: border-box;
 	cursor: pointer;
-	height: 100px;
+	height: 25vh;
 	padding: 2px;
 	position: relative;
 	transition: opacity 0.3s;
-	width: 150px;
+	width: 25vw;
 
 	background-size:100% 100% !important;
 
@@ -834,7 +776,7 @@ transition: opacity 0.1  1.5s ease;
 	position:absolute; width:10vw; height:12vh; z-index:99 !important;overflow:visible;
 }
 .crib-text{
-	color:white; font-size: 1.25vw;
+	color:white; font-size: 2.25vw;
    
 	  background-repeat: no-repeat;
 	  background-size: 100% 100%;
@@ -850,6 +792,15 @@ transition: opacity 0.1  1.5s ease;
   .crib-text a{
 	color:white
   }
+.eyepic{
+	transform: scale(1.2);
+	box-sizing: border-box;
+	display: block;
+	float:left;
+}
+.calwords{
+	margin-left:20w; padding-right:5vw; padding-top:9vh;  font-family: 'RobotoMono-Thin'; font-size: medium;width:80vw;
+}
 
 /* 100 HIGH*/ 
 @media(Min-height:100px){
@@ -952,8 +903,8 @@ display:none;
 	margin-top:-30vh!important;
   }
   .Hotspot-epi:focus{
-	height:calc(15vw - 1%)!important;
-	width:15vw!important;
+	height:15vh!important;
+	width:25vw!important;
 	margin-top:-14vh !important;
 
 }
@@ -979,6 +930,10 @@ display:none;
 .crib-text{
 	font-size: 2.1vh !important;
 }
+.eyepic{
+	transform: scale(0.9) !important;
+}
+
 }
 
 
@@ -1014,8 +969,8 @@ border:4px solid rgb(213, 255, 196)
 	margin-top:50vh !important;
 }
 .Hotspot-epi:focus{
-	height:calc(13vw - 1%)!important;
-	width:13vw!important;
+	height:25vh!important;
+	width:25vw!important;
 	margin-top:-20vh !important;
 
 }
@@ -1066,7 +1021,9 @@ border:4px solid rgb(213, 255, 196)
 .crib-text{
 	font-size: 2vh !important;
 }
+
 }
+
 
 
 /* 500 HIGH*/ 
@@ -1106,9 +1063,10 @@ border:4px solid rgb(213, 255, 196)
 	margin-top:-4vh;
 }
 .Hotspot-epi:focus{
-	height:calc(15vw - 1%)!important;
-	width:15vw!important;
+	height:40vh!important;
+	width:40vw !important;
 	margin-top:-14vh !important;
+	transform: scale(2);
 
 }
 .Hotspot-epi:focus .hide{
@@ -1211,6 +1169,7 @@ margin-left:20vw;
 			content:'H700';
 			font-size:12px;
 }
+
 
 
 .Hotspot-eye:focus g{
@@ -1404,6 +1363,15 @@ transform: translateX(-3vw);
    margin-top:-10vh !important;
 }
 
+.Hotspot-epi:focus{
+	transform: scaleY(0.9);
+	
+	 }
+
+.bub{
+	margin-left:-10vw;
+}
+
 }
  @media(Min-width:350px){
 	.rex2{
@@ -1426,7 +1394,11 @@ transform: translateX(-3vw);
 	height:calc(17vw - 1%)!important;
 	width:17vw!important;
 	margin-left:-16vw !important;
+	transform: scaleY(0.7);
+	
 }
+
+
 .Hotspot-epi:focus .hide{
 	position: absolute;
 	margin-left:15vw !important;
@@ -1476,6 +1448,14 @@ transform: translateX(-3vw);
 		.jfhug{
 		   transform: scale(1.5);margin-top:55vh !important;
 		}
+	
+		.Hotspot-epi:focus{
+			transform: scaleY(0.9);
+			
+			 }
+			 .Hotspot-epi:focus g{
+				margin-left:25vw !important;
+			}
 		
 }
 @media(Min-width:500px){
@@ -1506,6 +1486,10 @@ transform: translateX(-3vw);
 		height:calc(17vw - 1%)!important;
 		width:17vw!important;
 		margin-left:-16vw !important;
+		transform: scaleY(1.2);
+	}
+	.Hotspot-epi:focus g{
+		margin-left:25vw !important;
 	}
 	.Hotspot-epi:focus .hide{
 		position: absolute;
@@ -1526,6 +1510,15 @@ transform: translateX(-3vw);
 	transform: scale(2.9)!important;
 	   margin-top:45vh !important;
    }
+   .bub{
+	margin-left:-33vw !important;
+	transform: scale(0.8);
+}
+.calwords{
+	padding-left:20vw;
+	margin-left:90w !important; 
+	width:45vw;
+}
 }  
 
 @media(Min-width:550px){
@@ -1622,6 +1615,17 @@ transform: translateX(-3vw);
 	transform: scale(2.9)!important;
 	   margin-top:45vh !important;
    }
+   .eyepic{
+	transform: scale(0.9) translateX(-15vw) !important;
+}	
+.bub{
+	margin-left:-25vw !important;
+	transform: scale(0.8);
+}
+.calwords{
+	padding-left:12vw;
+	margin-left:20w; width:63vw;
+}
 }
 @media(Min-width:700px){
 	.rex2{
@@ -1670,6 +1674,14 @@ transform: translateX(-3vw);
 		padding-top:28px !important;
 		transform: translateY(20px);
 	   }
+	   .bub{
+		margin-left:-15vw !important;
+		transform: scale(0.8);
+	}
+	.calwords{
+		padding-left:10vw;
+		margin-left:20w; width:65vw;
+	}
 
 }
 @media(Min-width:800px){
@@ -1729,6 +1741,10 @@ transform: translateX(-3vw);
 		padding-top:38px !important;
 		transform: translateY(20px);
 	   }
+	   .bub{
+		margin-left:-13vw !important;
+		transform: scale(1);
+	}
 }
 @media(Min-width:900px){
 	.rex2{
@@ -1755,6 +1771,7 @@ transform: translateX(-3vw);
 				height:calc(15vw - 1%)!important;
 				width:17vw!important;
 				margin-left:-16vw !important;
+				transform: scaleY(1.4);
 			}
 			.Hotspot-epi:focus .hide{
 				position: absolute;
@@ -1783,7 +1800,10 @@ transform: translateX(-3vw);
 			transform: scale(2.6)!important;
 			   margin-top:45vh !important;
 		   }
-		
+	
+		   .eyepic{
+			transform: scale(0.9) translateX(-15vw) !important;
+		}		
 }
 @media(Min-width:1000px){
 	.rex2{
@@ -1839,6 +1859,14 @@ margin-left:20vw !important;
    transform: scale(2.5)!important;
    margin-top:40vh !important;
 }
+.bub{
+	margin-left:-3vw !important;
+	transform: scale(1);
+}
+.calwords{
+	padding-left:10vw;
+	margin-left:20w; width:85vw;
+}
 }
 
 @media(Min-width:1100px){
@@ -1874,6 +1902,12 @@ margin-left:20vw !important;
    transform: scale(2.5)!important;
    margin-top:40vh !important;
 }
+.eyepic{
+	transform: scale(1.2) translateX(-10vw)!important;
+}
+.bub{
+	margin-left:-10vw;
+}
 }
 @media(Min-width:1150px){
 .rex2{
@@ -1908,6 +1942,10 @@ margin-left:20vw !important;
 	.jfhug{
 		transform: scale(2.9)!important;
 	   margin-top:45vh !important;
+	}
+	.calwords{
+		padding-left:0vw;
+		margin-left:20w; width:85vw;
 	}
 }
 @media(Min-width:1200px){
@@ -1956,6 +1994,10 @@ margin-left:20vw !important;
 	padding-top:38px !important;
 	transform: translateY(20px);
    }
+   .calwords{
+	padding-left:0vw;
+	margin-left:20w; width:85vw;
+}
 }
 @media(Min-width:1250px){
 .rex2{
@@ -1983,6 +2025,10 @@ margin-left:20vw !important;
 }
 .jfhug{
    transform: scale(1.2);margin-top:45vh !important;
+}
+.calwords{
+	padding-left:0vw;
+	margin-left:20w; width:85vw;
 }
 }
 @media(Min-width:1300px){
@@ -2028,6 +2074,10 @@ margin-left:20vw !important;
 .jfhug{
    transform: scale(1.2);margin-top:45vh !important;
 }
+.calwords{
+	padding-left:0vw;
+	margin-left:10w; width:90vw;
+}
 }
 @media(Min-width:1400px){
 .rex2{
@@ -2057,6 +2107,7 @@ margin-left:20vw !important;
 	height:calc(10vw - 1%)!important;
 	width:17vw!important;
 	margin-left:-16vw !important;
+	transform: scaleY(1.5);
 }
 .Hotspot-epi:focus .hide{
 	position: absolute;
@@ -2085,7 +2136,9 @@ margin-left:20vw !important;
 }
 .crib-text{
 	padding-top:48px !important;
+	font-size: 1.2vw !important;
    }
+
 }
 
 
