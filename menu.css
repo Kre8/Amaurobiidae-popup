@@ -1,4 +1,45 @@
 /***** NAV *****/
+body{
+  background-image: url(grey.jpg); background-size: 100vw 100vh;background-repeat: no-repeat;
+}
+
+
+crib-text::-webkit-scrollbar-thumb:hover {
+  z-index: 99;
+  height:0vh;
+
+
+  position: absolute;
+  width:0.1vw;
+
+
+  overflow: visible;
+  cursor:pointer;
+  }
+
+ body::-webkit-scrollbar-thumb {
+  z-index: 99;
+  height:100%;
+
+
+  position: absolute;
+  width:0.1vw;
+
+  overflow: visible;
+  cursor: pointer;
+  }
+  
+ body::-webkit-scrollbar-track-piece {
+  
+  width: 1vw;
+
+
+
+  height:150%;
+    overflow: hidden;
+  cursor:pointer;
+  
+  }
 
 .hamburger:focus{
     outline: none;
