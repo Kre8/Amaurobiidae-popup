@@ -761,7 +761,7 @@ aspect-ratio: 1 / 3;
 	margin-left:15vw; padding-right:5vw; padding-top:0vh; height:20vh;font-size:calc(1vh - 0.3vw);color:white; width:40vw;font-family: 'Roboto Mono', monospace; 
 }
 .jp{
-	margin-top:3vh;position:relative;font-family: 'Roboto Mono', monospace; font-size: 2.2vh;padding-right:1vw;
+	margin-top:3vh;position:relative;  font-family: 'RobotoMono-Thin'; font-size: 2.2vh;padding-right:1vw;
 }
 .jpic{
 	width:calc(14vw + 10px);height:calc(20vh + 10px);float:left;position:relative;padding:20px;margin-top:4vh;
