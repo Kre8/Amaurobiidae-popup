@@ -2354,6 +2354,10 @@ margin-left:20vw !important;
 	max-width: 100%;
 	animation: fademe 1s ease-in-out both;
   }
+
+  .shmodal::-webkit-scrollbar {
+	width: 5px;
+	}
   .shmodal .shmodal-close {
 	font-family: "Helvetica",Arial,sans-serif;
 	font-size: 3em;
@@ -2362,7 +2366,7 @@ margin-left:20vw !important;
 	display: block;
 	position: absolute;
 	top: 80vh;
-	right: 15px;
+	right: 3vw;
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
